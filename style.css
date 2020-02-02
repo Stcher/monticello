@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .1s ease-in;
+}
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+	font-family: 'GothamBook';
+	src: local('GothamBook'), url('/fonts/GothamBook/GothamBook.woff') format('woff'), url('/fonts/GothamBook/GothamBook.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'gothambold1';
+	src: local('gothambold1'), url('/fonts/gothambold/gothambold1.woff') format('woff'), url('/fonts/gothambold/gothambold1.ttf') format('truetype');
+}
+a { 
+  text-decoration: none;
+color: white;
+ } 
+ A:visited {
+  color: white; 
+ }
+ A:active {
+  color: white; 
+ }
+.my-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 5%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  bottom: 80px;
+    left: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.my-dots li {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: white;
+}
+.monticello_head_words--h1{
+  font-family: 'gothambold1' !important;
+  font-size: 70px;
+  display:flex;
+  justify-content: center;
+}
+.monticello_head_words--p{
+  font-family: 'GothamBook' !important;
+  font-size: 20px;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+}
+.monticello_head_words {
+  padding-top: 15%;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+}
+.monticello_head {
+  background:  url(../img/headerImg.png),url(../img/headerBackgr.png), no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 760px;
+}
+.monticello_logo {
+  padding-left: 8%;
+  padding-top: 30px;
+}
+.fab{
+  background: transparent;
+  border-radius: 50%;
+     border: 1px solid white;
+     display: flex;
+     padding: 8px;
+     color:white;
+     padding-left: 10px;
+     padding-right: 10px;
+     
+}
+.fab:hover {
+  background-color: lightskyblue;
+  cursor: pointer;
+}
+.monticello_head_nav_ul {
+  padding-left: 130px;
+  padding-top: 40px;
+  
+
+}
+.lastli {
+  padding-right: 0px;
+}
+.monticello_head_nav_social{
+  padding-right: 40px;
+}
+.monticello_head_nav_social_ul--button{
+  padding-right: 30px;
+
+}
+li {
+  list-style-type: none;
+ }
+.monticello_head_nav_ul li {
+  margin-right: 50px;
+display: flex;
+width: max-content;
+font-family: 'GothamBook' !important;
+color: white;
+
+}
+.monticello_head_nav_ul_div {
+  padding-right: 10px; 
+}
+.monticello_head_nav_social {
+  padding-top: 35px;
+  margin-left: 40px;
+}
+.monticello_head_nav, .monticello_head_nav_ul,.monticello_logo,.monticello_head_nav_social_ul {
+  display: flex;
+}
+.monticello_head_nav_ul--button {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+       border: 1px solid white;
+       display: flex;
+       
+  }
+  .monticello_head_nav_ul--button:hover {
+    background-color: white;
+  }
+  .button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'GothamBook' !important;
+  }
+  .button:hover {
+    background-color: #90bedf;
+    transform: scale(1.1);
+  }
+  .buttonblock{
+    padding-top: 30px;
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+  }
+  .monticello_project--hr{
+    padding-top: 50px;
+  }
+  hr {
+    width: 5%;
+     margin: 0 50% 0 47%;
+  }
+  .monticello_project--h1{
+    padding-top: 0px;
+    font-family: 'gothambold1' !important;
+    font-size: 40px;
+    text-align: center;
+  }
+  .monticello_project_b--h1{
+    padding-top: 0px;
+    font-family: 'gothambold1' !important;
+    font-size: 40px;
+  }
+  .monticello_project_firstblock{
+    display: flex;
+  }
+  .projectimg{
+    width: 35%;
+       height: 50%;
+    position: relative
+  }
+  .projectimg1 {
+    height: 55%;
+    width: 35%;
+    position: absolute;
+    left: 120px;
+    top: 150%;
+  }
+  .monticello_project_firstblock-words{
+    padding-left: 18%;
+    padding-top: 10%;
+  }
+  .monticello_project--p{
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+  }
+  .monticello_project--span {
+    margin: 0;
+    padding: 0;
+  }
+  .monticello_project--d {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+  .monticello_project_secondblock{
+    padding-top: 200px;
+    padding-left: 50px;
+  }
+  .monticello_project--c {
+    padding-bottom: 220px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+  }
+  .imgblock {
+    padding-bottom: 100px;
+  }
+  .secondblock_img {
+    display:flex;
+    justify-content: flex-end;
+    float: right;
+    width:35%;
+    height: 60%;
+    position: relative;
+  }
+  .secondblock_img1 {
+    display:flex;
+    height: 65%;
+    justify-content: flex-end;
+    float: right;
+    position: relative;
+    position: absolute;
+    top: 235%;
+    right: 50px;
+    width: 40%;
+  }
+  .monticello_news{
+    padding-top: 150px;
+  }
+  hr {
+    width: 5%;
+     margin: 0 50% 0 47%;
+  }
+  
+  #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width:5%;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+ display: none;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  display: none;
+  background: lightsteelblue;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.monticello_news {
+  background: url(../img/newsBackgr.png) ;
+}
+@media only screen and (max-width: 1200px) {
+  #menuToggle span {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .monticello_head_nav_ul {
+    display: none;
+  }
+
+}
+.monticello_news--h1{
+  padding-top: 0px;
+  font-family: 'gothambold1' !important;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+.monticello_news_slick {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  box-sizing: border-box 
+}
+.monticello_news_slick_first,.monticello_news_slick_second,.monticello_news_slick_third {
+  background-color: white;
+  width: 150px;
+  
+}
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+.newsimg {
+  width: 100%;
+}
+.monticello_news_slick_first-h2, .monticello_news_slick_second-h2, .monticello_news_slick_third-h2 {
+  font-family: 'gothambold1' !important;font-family: 'gothambold1' !important;
+  padding: 5px;
+  padding-left: 10px;
+}
+.monticello_news_slick_second-p,.monticello_news_slick_first-p,.monticello_news_slick_third-p {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 10px;
+}
+.monticello_news_slick_author {
+  padding-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+.monticello_news_slick_author-span,.monticello_news_slick_author-p {
+  font-family: 'GothamBook' !important;
+}
+.monticello_news_slick_author-span {
+  width: 100%;
+  padding-top: 20px;
+}
+
